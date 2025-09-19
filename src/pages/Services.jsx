@@ -15,15 +15,10 @@ function Services() {
         <div className="col-md-6">
           <h2 className="mb-3">Our Services</h2>
           <p className="text-muted">
-            At <strong>Byte Code</strong>, we offer a wide range of IT and
-            software services tailored to meet your business needs. From idea to
-            execution, we provide end-to-end solutions that ensure scalability,
-            performance, and reliability.
+            At <strong>TechNova Solutions</strong>, we offer a wide range of IT and software services designed to accelerate your business growth. From strategy to execution, we deliver end-to-end solutions that focus on scalability, security, and innovation.
           </p>
           <p className="text-muted">
-            Our team of experts specializes in building modern, secure, and
-            user-friendly applications that help businesses stay ahead in the
-            digital era.
+            Our team of skilled professionals specializes in creating modern, reliable, and user-centric applications that empower businesses to thrive in the digital world.
           </p>
           <button className="btn btn-success mt-3">Explore More</button>
         </div>
@@ -71,7 +66,7 @@ function Services() {
       <div className="row mt-4">
         <div className="col-md-4 text-center mb-4">
           <img
-            src="/imgs/p3.png"
+            src="/imgs/p3.jpg"
             alt="UI/UX Design"
             className="img-fluid mb-3"
           />
@@ -83,7 +78,7 @@ function Services() {
         </div>
         <div className="col-md-4 text-center mb-4">
           <img
-            src="/imgs/p5.png"
+            src="/imgs/p6.png"
             alt="Digital Marketing"
             className="img-fluid mb-3"
           />
@@ -95,7 +90,7 @@ function Services() {
         </div>
         <div className="col-md-4 text-center mb-4">
           <img
-            src="/imgs/p8.webp"
+            src="/imgs/p9.png"
             alt="IT Consulting"
             className="img-fluid mb-3"
           />

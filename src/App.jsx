@@ -42,29 +42,29 @@ function App() {
                     <div className="col-sm-6 col-md-4 col-lg-3 ">
                       <Products
                         imgSrc="/imgs/c1.webp"
-                        title="Python"
-                        text="Some quick example text to build on the card title and make up the bulk of the card’s content"
+                        title="Web Development"
+                        text="Responsive, modern, and scalable websites tailored to your business"
                         btntext="Explore" />
                     </div>
                     <div className="col-sm-6 col-md-4 col-lg-3 ">
                       <Products
                         imgSrc="/imgs/c2.jpeg"
-                        title="React"
-                        text="Some quick example text to build on the card title and make up the bulk of the card’s content"
+                        title="Mobile App Development"
+                        text="Android & iOS apps with seamless user experience"
                         btntext="Explore" />
                     </div>
                     <div className="col-sm-6 col-md-4 col-lg-3 ">
                       <Products
                         imgSrc="/imgs/c3.jpg"
-                        title="JS"
-                        text="Some quick example text to build on the card title and make up the bulk of the card’s content"
+                        title="Cloud Solutions"
+                        text="Secure, scalable, and cost-effective cloud services"
                         btntext="Explore" />
                     </div>
                     <div className="col-sm-6 col-md-4 col-lg-3 ">
                       <Products
                         imgSrc="/imgs/c4.png"
-                        title="Flask"
-                        text="Some quick example text to build on the card title and make up the bulk of the card’s content"
+                        title="AI & Data Consulting"
+                        text="Harness the power of AI to drive smarter decisions"
                         btntext="Explore" />
                     </div>
                   </div>

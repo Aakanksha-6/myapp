@@ -1,59 +1,92 @@
-// src/components/LoginForm.jsx
-import React from "react";
-import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Login = () => {
+function Login() {
+  const [form, setForm] = useState({ username: "", password: "" });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Username: ${form.username}\nPassword: ${form.password}`);
+  };
+
   return (
-    <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-10 w-96 text-white">
-      {/* User Icon */}
-      <div className="flex justify-center mb-6">
-        <div className="bg-white/20 p-4 rounded-full">
-          <FaUser size={40} />
+    <div className="container-fluid vh-100">
+      <div className="row h-100 align-items-center">
+        <div className="col-md-6 d-none d-md-block p-0">
+          <img src={"imgs/log.jpg"} alt="login" className="img-fluid" />
+        </div>
+
+        <div className="col-md-6 d-flex justify-content-center align-items-center">
+          <div
+            className="card shadow-lg p-4 w-75 h-50"
+            style={{ maxWidth: "590px" }}
+          >
+            <h3 className="text-center text-primary mb-3">Login</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                <label htmlFor="username" className="form-label fw-bold">
+                  Username
+                </label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  value={form.username}
+                  onChange={handleChange}
+                  className="form-control"
+                  placeholder="Enter username"
+                  autoComplete="off"
+                  required
+                />
+              </div>
+
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label fw-bold">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value={form.password}
+                  onChange={handleChange}
+                  className="form-control"
+                  placeholder="Enter password"
+                  required
+                />
+              </div>
+
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <a href="#" className="text-decoration-none small text-primary">
+                  Forgot Password?
+                </a>
+              </div>
+
+              <div className="d-grid">
+                <button type="submit" className="btn btn-primary fw-bold">
+                  Login
+                </button>
+              </div>
+            </form>
+
+            <p className="text-center mt-3 mb-0">
+              Don’t have an account?{" "}
+              <Link
+                to="/register"
+                className="text-decoration-none text-success fw-bold"
+              >
+                Click here
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
-
-      {/* Title */}
-      <h2 className="text-center text-lg tracking-widest mb-8">
-        CUSTOMER LOGIN
-      </h2>
-
-      {/* Email Field */}
-      <div className="flex items-center border-b border-gray-300 mb-6">
-        <FaEnvelope className="mr-3" />
-        <input
-          type="email"
-          placeholder="Email ID"
-          className="bg-transparent focus:outline-none w-full py-2"
-        />
-      </div>
-
-      {/* Password Field */}
-      <div className="flex items-center border-b border-gray-300 mb-6">
-        <FaLock className="mr-3" />
-        <input
-          type="password"
-          placeholder="Password"
-          className="bg-transparent focus:outline-none w-full py-2"
-        />
-      </div>
-
-      {/* Options */}
-      <div className="flex justify-between items-center text-sm mb-6">
-        <label className="flex items-center gap-2">
-          <input type="checkbox" className="accent-blue-500" />
-          Remember me
-        </label>
-        <a href="#" className="hover:underline">
-          Forgot Password?
-        </a>
-      </div>
-
-      {/* Login Button */}
-      <button className="w-full bg-blue-800 py-3 rounded-lg hover:bg-blue-900 transition">
-        LOGIN
-      </button>
     </div>
   );
-};
+}
 
 export default Login;
