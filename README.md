@@ -1,3 +1,7 @@
+TechNova Solutions
+
+We are a forward-thinking IT services company dedicated to helping businesses innovate, grow, and transform digitally. With expertise in modern technologies, we deliver reliable, scalable, and customized solutions.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
